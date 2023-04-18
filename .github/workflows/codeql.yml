@@ -75,3 +75,8 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+        
+    - name: Perform CodeQL2 Analysis
+      uses: github/codeql-action/analyze@v2
+      with:
+        queries: github/comp3310-queries/assessment.ql
